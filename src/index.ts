@@ -11,7 +11,7 @@ function main() {
   const { te, hu } = device.newest_events
 
   sheet.appendRow([
-    (new Date).toUTCString(),
+    Utilities.formatDate(new Date, 'Asia/Tokyo', 'yyyy/MM/dd HH:mm:ss'),
     te.val,
     hu.val
   ]);
