@@ -4,7 +4,7 @@ type Sheet = GoogleAppsScript.Spreadsheet.Sheet;
 function main() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 
-  const sheet = getOrInsertSheet(spreadsheet, '時間');
+  const sheet = getOrInsertSheet(spreadsheet, '温度と湿度');
 
   const device = fetchDevice(process.env.TOKEN);
 
@@ -38,5 +38,5 @@ function fetchDevice(token) {
    });
 
    // NOTE: I have only one device ;)
-   return response[0];
+   return JSON.parse(response.getContentText())[0];
 }
