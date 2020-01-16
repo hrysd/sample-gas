@@ -5,8 +5,11 @@ function main() {
     const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
 
     const sheet = getOrInsertSheet(spreadsheet, '時間');
-    
-    sheet.appendRow([(new Date).toUTCString()]);
+
+    sheet.appendRow([
+        (new Date).toUTCString(),
+        process.env.SECRET
+    ]);
 }
 
 function getOrInsertSheet(spreadsheet: Spreadsheet, sheetName: string): Sheet {
