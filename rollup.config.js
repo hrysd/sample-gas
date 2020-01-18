@@ -9,7 +9,7 @@ export default {
   },
   plugins: [
     replace({
-      'process.env.SECRET': JSON.stringify(process.env.SECRET)
+      'process.env.TOKEN': JSON.stringify(process.env.TOKEN)
     }),
     typescript()
   ]
