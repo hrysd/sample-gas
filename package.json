@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "rollup": "rollup"
+    "rollup": "rollup",
+    "clasp": "clasp"
   },
   "dependencies": {
     "@google/clasp": "^2.3.0",
