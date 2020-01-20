@@ -27,6 +27,6 @@ API 経由ではトリガーを設定出来ないため [WEB UI](https://script.
 
 これは [Data Portal](https://datastudio.google.com/overview) を利用した例。
 
-![datastudio.png](screenshots/datasudio.png)
+![datastudio.png](screenshots/datastudio.png)
 
 
