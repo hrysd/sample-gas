@@ -22,6 +22,9 @@ export default [
       format: 'cjs'
     },
     plugins: [
+      replace({
+        'process.env.HOOK_ENDPOINT': JSON.stringify(process.env.HOOK_ENDPOINT)
+      }),
       typescript()
     ]
   }
